@@ -25,6 +25,14 @@ app.get("/create", (req, res) => {
     res.render("create");
 });
 
+app.post("/create/new", (req, res) => {
+    const days = req.body.days;
+    console.log(days);
+    res.render("new", {
+        days: days
+    });
+});
+
 app.listen(port, host, () => {
     console.log("Listening...");
 });
