@@ -5,12 +5,7 @@ block scripts
 
 block content
     h1 Create your own program
-    form(action="", method="post")      
+    form(action="/create/new", method="POST") 
         h3 Number of days 
-        input(type="text")
-        button Create
-    - for (let i = 1; i <= 7; i++)
-        div 
-            h3 Day #{i} 
-            button Add
-    
+        input(type="text" id="days" name="days")
+        button(id="create") Create
