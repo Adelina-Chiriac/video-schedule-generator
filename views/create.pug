@@ -1,6 +1,7 @@
 extends layout.pug 
 
 block scripts 
+    script(src="/javascript/create.js")
 
 block content
     h1 Create your own program
@@ -10,7 +11,6 @@ block content
         button Create
     - for (let i = 1; i <= 7; i++)
         div 
-            h3 Day #{i}
+            h3 Day #{i} 
             button Add
     
-        
