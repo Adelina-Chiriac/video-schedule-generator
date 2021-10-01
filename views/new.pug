@@ -1,0 +1,10 @@
+extends layout.pug 
+
+block scripts 
+
+block content 
+    - for (let i = 1; i <= days; i++)
+        div 
+            h3 Day #{i} 
+            button Add
+    
