@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             saveButtons.forEach((button, index) => {
                 button.addEventListener("click", () => {
                     const link = links[index].value;
+                    console.log(link);
                 })
             });
         })
